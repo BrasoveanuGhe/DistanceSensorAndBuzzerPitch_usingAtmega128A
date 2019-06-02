@@ -201,7 +201,7 @@ enum tc2_clksel_t {
 enum tc1_ocom_mode_t{
  
 	/************************************************************************************************
-							NORMAL PORT OPERATION FOR ALL CHANNEL
+					NORMAL PORT OPERATION FOR ALL CHANNEL
 	************************************************************************************************/ 
 	/*Non-PWM Mode ->			(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
 	/*Fast PWM Mode ->			(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
@@ -211,20 +211,20 @@ enum tc1_ocom_mode_t{
 	TC1_OCOMC_NORMAL = 0x00,
 
 	/************************************************************************************************
-							TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
+					TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Toggle OCnA/OCnB/OCnC on compare match)*/
-	/*Fast PWM Mode ->			(WGMn3:0 = 15: Toggle OCnA on Compare Match, OCnB/OCnC disconnected (normal port operation))*/
+	/*Non-PWM Mode ->		(Toggle OCnA/OCnB/OCnC on compare match)*/
+	/*Fast PWM Mode ->		(WGMn3:0 = 15: Toggle OCnA on Compare Match, OCnB/OCnC disconnected (normal port operation))*/
 	/*Phase Correct PWM ->		(WGMn3:0 = 9 or 11: Toggle OCnA on Compare Match, OCnB/ OCnC disconnected (normal port operation))*/
 	TC1_OCOMA_TOGGLE = 0x40,
 	TC1_OCOMB_TOGGLE = 0x10,
 	TC1_OCOMC_TOGGLE = 0x04,
 
 	/************************************************************************************************
-							CLEAR ON COMPARE MATCH FOR ALL CHANNEL
+					CLEAR ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Clear OCnA/OCnB/OCnC on compare match)*/
-	/*Fast PWM Mode ->			(Clear OCnA/OCnB/OCnC on compare match, set OCnA/OCnB/OCnC at BOTTOM, (non-inverting mode))*/
+	/*Non-PWM Mode ->		(Clear OCnA/OCnB/OCnC on compare match)*/
+	/*Fast PWM Mode ->		(Clear OCnA/OCnB/OCnC on compare match, set OCnA/OCnB/OCnC at BOTTOM, (non-inverting mode))*/
 	/* Phase Correct PWM ->		(Clear OCnA/OCnB/OCnC on compare match when up-counting
 									Set OCnA/OCnB/OCnC on compare match when down-counting )*/
 	TC1_OCOMA_CLEAR = 0x80,
@@ -232,10 +232,10 @@ enum tc1_ocom_mode_t{
 	TC1_OCOMC_CLEAR = 0x08,
 
 	/************************************************************************************************
-							SET ON COMPARE MATCH FOR ALL CHANNEL
+					SET ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Set OCnA/OCnB/OCnC on compare match (set output to high level))*/
-	/*Fast PWM Mode ->			(Set OCnA/OCnB/OCnC on compare match, clear OCnA/OCnB/OCnC at BOTTOM, (inverting mode))*/
+	/*Non-PWM Mode ->		(Set OCnA/OCnB/OCnC on compare match (set output to high level))*/
+	/*Fast PWM Mode ->		(Set OCnA/OCnB/OCnC on compare match, clear OCnA/OCnB/OCnC at BOTTOM, (inverting mode))*/
 	/* Phase Correct PWM ->		(Set OCnA/OCnB/OCnC on compare match when up-counting
 									Clear OCnA/OCnB/OCnC on compare match when down-counting ) */
 	TC1_OCOMA_SET = 0xC0,
@@ -248,30 +248,30 @@ enum tc1_ocom_mode_t{
 enum tc3_ocom_mode_t{
 		
 	/************************************************************************************************
-							NORMAL PORT OPERATION FOR ALL CHANNEL
+					NORMAL PORT OPERATION FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
-	/*Fast PWM Mode ->			(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
+	/*Non-PWM Mode ->		(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
+	/*Fast PWM Mode ->		(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
 	/*Phase Correct PWM ->		(Normal port operation, OCnA/OCnB/OCnC disconnected)*/
 	TC3_OCOMA_NORMAL = 0x00,
 	TC3_OCOMB_NORMAL = 0x00,
 	TC3_OCOMC_NORMAL = 0x00,
 	
 	/************************************************************************************************
-							TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
+				TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Toggle OCnA/OCnB/OCnC on compare match)*/
-	/*Fast PWM Mode ->			(WGMn3:0 = 15: Toggle OCnA on Compare Match, OCnB/OCnC disconnected (normal port operation))*/
+	/*Non-PWM Mode ->		(Toggle OCnA/OCnB/OCnC on compare match)*/
+	/*Fast PWM Mode ->		(WGMn3:0 = 15: Toggle OCnA on Compare Match, OCnB/OCnC disconnected (normal port operation))*/
 	/*Phase Correct PWM ->		(WGMn3:0 = 9 or 11: Toggle OCnA on Compare Match, OCnB/ OCnC disconnected (normal port operation))*/	
 	TC3_OCOMA_TOGGLE = 0x40,
 	TC3_OCOMB_TOGGLE = 0x10,
 	TC3_OCOMC_TOGGLE = 0x04,
 		
 	/************************************************************************************************
-							CLEAR ON COMPARE MATCH FOR ALL CHANNEL
+					CLEAR ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Clear OCnA/OCnB/OCnC on compare match)*/
-	/*Fast PWM Mode ->			(Clear OCnA/OCnB/OCnC on compare match, set OCnA/OCnB/OCnC at BOTTOM, (non-inverting mode))*/
+	/*Non-PWM Mode ->		(Clear OCnA/OCnB/OCnC on compare match)*/
+	/*Fast PWM Mode ->		(Clear OCnA/OCnB/OCnC on compare match, set OCnA/OCnB/OCnC at BOTTOM, (non-inverting mode))*/
 	/* Phase Correct PWM ->		(Clear OCnA/OCnB/OCnC on compare match when up-counting
 									Set OCnA/OCnB/OCnC on compare match when down-counting )*/
 	TC3_OCOMA_CLEAR = 0x80,		
@@ -279,10 +279,10 @@ enum tc3_ocom_mode_t{
 	TC3_OCOMC_CLEAR = 0x08,		
 
 	/************************************************************************************************
-							SET ON COMPARE MATCH FOR ALL CHANNEL
+					SET ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM Mode ->			(Set OCnA/OCnB/OCnC on compare match (set output to high level))*/
-	/*Fast PWM Mode ->			(Set OCnA/OCnB/OCnC on compare match, clear OCnA/OCnB/OCnC at BOTTOM, (inverting mode))*/
+	/*Non-PWM Mode ->		(Set OCnA/OCnB/OCnC on compare match (set output to high level))*/
+	/*Fast PWM Mode ->		(Set OCnA/OCnB/OCnC on compare match, clear OCnA/OCnB/OCnC at BOTTOM, (inverting mode))*/
 	/* Phase Correct PWM ->		(Set OCnA/OCnB/OCnC on compare match when up-counting
 									Clear OCnA/OCnB/OCnC on compare match when down-counting ) */								
 	TC3_OCOMA_SET = 0xC0,		
@@ -296,34 +296,34 @@ enum tc3_ocom_mode_t{
 enum tc0_ocom_mode_t{
 
 	/************************************************************************************************
-							NORMAL PORT OPERATION FOR ALL CHANNEL
+					NORMAL PORT OPERATION FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/* Non-PWM MODE ->			(Normal port operation, OC0 disconnected)*/
-	/* Fast PWM Mode ->			(Normal port operation, OC0 disconnected)*/
+	/* Non-PWM MODE ->		(Normal port operation, OC0 disconnected)*/
+	/* Fast PWM Mode ->		(Normal port operation, OC0 disconnected)*/
 	/* Phase Correct PWM ->		(Normal port operation, OC0 disconnected)*/
 	TC0_OCOM0_NORMAL = 0x00,
 
 	/************************************************************************************************
-							TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
+					TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/* Non-PWM MODE ->			(Toggle OC0 on Compare Match)*/
-	/* Fast PWM Mode ->			(Reserved)*/
+	/* Non-PWM MODE ->		(Toggle OC0 on Compare Match)*/
+	/* Fast PWM Mode ->		(Reserved)*/
 	/* Phase Correct PWM ->		(Reserved)*/
 	TC0_OCOM0_TOGGLE = 0x10,
 
 	/************************************************************************************************
-							CLEAR ON COMPARE MATCH FOR ALL CHANNEL
+					CLEAR ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/* Non-PWM MODE ->			(Clear OC0 on Compare Match)*/
-	/* Fast PWM Mode ->			(Clear OC0 on Compare Match, set OC0 at BOTTOM, (non-inverting mode)) */
+	/* Non-PWM MODE ->		(Clear OC0 on Compare Match)*/
+	/* Fast PWM Mode ->		(Clear OC0 on Compare Match, set OC0 at BOTTOM, (non-inverting mode)) */
 	/* Phase Correct PWM ->		(Clear OC0 on Compare Match when up-counting. Set OC0 on Compare Match when downcounting)*/
 	TC0_OCOM0_CLEAR = 0x20,
 
 	/************************************************************************************************
-							SET ON COMPARE MATCH FOR ALL CHANNEL
+					SET ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM MODE ->			(Set OC0 on Compare Match)*/
-	/*Fast PWM Mode ->			(Set OC0 on Compare Match, clear OC0 at BOTTOM, (inverting mode))*/
+	/*Non-PWM MODE ->		(Set OC0 on Compare Match)*/
+	/*Fast PWM Mode ->		(Set OC0 on Compare Match, clear OC0 at BOTTOM, (inverting mode))*/
 	/*Phase Correct PWM ->		(Set OC0 on Compare Match when up-counting. Clear OC0 on Compare Match when downcounting)*/
 	TC0_OCOM0_SET = 0x30,
 
@@ -334,34 +334,34 @@ enum tc0_ocom_mode_t{
 enum tc2_ocom_mode_t{
 
 	/************************************************************************************************
-							NORMAL PORT OPERATION FOR ALL CHANNEL
+					NORMAL PORT OPERATION FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/* Non-PWM MODE ->			(Normal port operation, OC2 disconnected)*/
-	/* Fast PWM Mode ->			(Normal port operation, OC2 disconnected)*/
+	/* Non-PWM MODE ->		(Normal port operation, OC2 disconnected)*/
+	/* Fast PWM Mode ->		(Normal port operation, OC2 disconnected)*/
 	/* Phase Correct PWM ->		(Normal port operation, OC2 disconnected)*/
 	TC2_OCOM2_NORMAL = 0x00,
 	
 	/************************************************************************************************
-							TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
+					TOGGLE ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/* Non-PWM MODE ->			(Toggle OC2 on Compare Match)*/
-	/* Fast PWM Mode ->			(Reserved)*/
+	/* Non-PWM MODE ->		(Toggle OC2 on Compare Match)*/
+	/* Fast PWM Mode ->		(Reserved)*/
 	/* Phase Correct PWM ->		(Reserved)*/
 	TC2_OCOM2_TOGGLE = 0x10,
 	
 	/************************************************************************************************
-							CLEAR ON COMPARE MATCH FOR ALL CHANNEL
+					CLEAR ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/* Non-PWM MODE ->			(Clear OC2 on Compare Match)*/
-	/* Fast PWM Mode ->			(Clear OC2 on Compare Match, set OC2 at BOTTOM, (non-inverting mode)) */
+	/* Non-PWM MODE ->		(Clear OC2 on Compare Match)*/
+	/* Fast PWM Mode ->		(Clear OC2 on Compare Match, set OC2 at BOTTOM, (non-inverting mode)) */
 	/* Phase Correct PWM ->		(Clear OC2 on Compare Match when up-counting. Set OC2 on Compare Match when downcounting)*/
 	TC2_OCOM2_CLEAR = 0x20,
 	
 	/************************************************************************************************
-							SET ON COMPARE MATCH FOR ALL CHANNEL
+					SET ON COMPARE MATCH FOR ALL CHANNEL
 	************************************************************************************************/ 
-	/*Non-PWM MODE ->			(Set OC2 on Compare Match)*/
-	/*Fast PWM Mode ->			(Set OC2 on Compare Match, clear OC2 at BOTTOM, (inverting mode))*/
+	/*Non-PWM MODE ->		(Set OC2 on Compare Match)*/
+	/*Fast PWM Mode ->		(Set OC2 on Compare Match, clear OC2 at BOTTOM, (inverting mode))*/
 	/*Phase Correct PWM ->		(Set OC2 on Compare Match when up-counting. Clear OC2 on Compare Match when downcounting)*/
 	TC2_OCOM2_SET = 0x30,
 };
