@@ -22,13 +22,13 @@ typedef struct{
 BuzzerPin Init;
 
 /**
- * \brief				<< Used to set the buzzer pin or any other pin direction >>
+ * \brief			Used to set the buzzer pin or any other pin direction 
  *
  * \param PORT			Port address
  * \param BIT			Select the Bit
  * \param STATE			* Initiate the direction of Pin
- * 							- INPUT 0  -> Pin is configured as an input Pin.
- * 							- OUTPUT 1 -> Pin is configured as an output Pin.
+ * 					- INPUT 0  -> Pin is configured as an input Pin.
+ * 					- OUTPUT 1 -> Pin is configured as an output Pin.
  * 
  * \return void
  */
