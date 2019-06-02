@@ -74,8 +74,7 @@ int main(void)
 
 	uart1_bReceptioneaza = false;
 	
-	//----------- << Ultrasonic sensor >> -----------
-	
+	// Initialize BUZZER
 	buzzerPWM_init();
 	
 	// Ports initialization (ultrasonic sensor)
@@ -91,8 +90,6 @@ int main(void)
 	// Overflow Interrupt Enable
 	tc1_set_interruptMask(TC1_MASK_OVERFLOW);
 	sei();
-	//-----------------------------------------------
-
 	
 	do
 	{
