@@ -14,7 +14,7 @@
 #endif
 
 /***************************************************************************************************
-								Macros for Bit Manipulation
+				Macros for Bit Manipulation
  ****************************************************************************************************/
 #define  util_GetBitMask(bit)          (1<<(bit))
 #define  util_BitSet(x,bit)            ((x) |=  util_GetBitMask(bit))
@@ -25,7 +25,7 @@
 
 
 /***************************************************************************************************
-								Port Direction configurations
+				Port Direction configurations
  ***************************************************************************************************/
 #define C_PinOutput_U8     0x01u
 #define C_PinInput_U8      0x00u
@@ -40,7 +40,7 @@
 
 
 /***************************************************************************************************
-								Macros to set the timer
+				Macros to set the timer
  ***************************************************************************************************/
 #define Timer0 TCNT0
 #define Timer1 TCNT1
@@ -54,45 +54,45 @@
 /**************************************************************************************************/
 
 /***************************************************************************************************
-						Macros to set the interrupt sense control 
+				Macros to set the interrupt sense control 
  ***************************************************************************************************/
-#define LOW_LVL_0			0x00u
-#define RESERVED_0			0x01u
+#define LOW_LVL_0		0x00u
+#define RESERVED_0		0x01u
 #define FALLING_EDGE_0		0x02u
 #define RISING_EDGE_0		0x03u
 
-#define LOW_LVL_1			0x00u
-#define RESERVED_1			0x04u
+#define LOW_LVL_1		0x00u
+#define RESERVED_1		0x04u
 #define FALLING_EDGE_1		0x08u
 #define RISING_EDGE_1		0x0Cu
 
-#define LOW_LVL_2			0x00u
-#define RESERVED_2			0x10u
+#define LOW_LVL_2		0x00u
+#define RESERVED_2		0x10u
 #define FALLING_EDGE_2		0x20u
 #define RISING_EDGE_2		0x30u
 
-#define LOW_LVL_3			0x00u
-#define RESERVED_3			0x40u
+#define LOW_LVL_3		0x00u
+#define RESERVED_3		0x40u
 #define FALLING_EDGE_3		0x80u
 #define RISING_EDGE_3		0xC0u
 
-#define LOW_LVL_4			0x00u
-#define RESERVED_4			0x01u
+#define LOW_LVL_4		0x00u
+#define RESERVED_4		0x01u
 #define FALLING_EDGE_4		0x02u
 #define RISING_EDGE_4		0x03u
 
-#define LOW_LVL_5			0x00u
-#define RESERVED_5			0x04u
+#define LOW_LVL_5		0x00u
+#define RESERVED_5		0x04u
 #define FALLING_EDGE_5		0x08u
 #define RISING_EDGE_5		0x0Cu
 
-#define LOW_LVL_6			0x00u
-#define RESERVED_6			0x10u
+#define LOW_LVL_6		0x00u
+#define RESERVED_6		0x10u
 #define FALLING_EDGE_6		0x20u
 #define RISING_EDGE_6		0x30u
 
-#define LOW_LVL_7			0x00u
-#define RESERVED_7			0x40u
+#define LOW_LVL_7		0x00u
+#define RESERVED_7		0x40u
 #define FALLING_EDGE_7		0x80u
 #define RISING_EDGE_7		0xC0u
 /**************************************************************************************************/
