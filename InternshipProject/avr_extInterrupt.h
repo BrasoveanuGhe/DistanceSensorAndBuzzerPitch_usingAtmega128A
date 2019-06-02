@@ -30,7 +30,7 @@ ExternalBits interrupt_init;
  * 
  * \param interrupt_Reg				register A (EICRA) or register B (EICRB)
  * \param interrupt_Pin				select the pin on which the interruption occurs
- *									bits 7:0 – INTn: [n = 7:0]
+ *						bits 7:0 – INTn: [n = 7:0]
  *
  * \param interrupt_Control			bits 7:0 – INTn: [n = 7:0]
  *						LOW_LVL_n -> The low level of INTn generates an interrupt request
